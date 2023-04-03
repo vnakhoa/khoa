@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game trí nhớ | Kmin Academy</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Game Memory</h1>
+        <div class="wrapper">
+            <div class="content">
+                <p class="word"></p>
+                <div class="details">
+                    <p>Cấp độ: <span id="level">1</span></p>
+                    <p id="requirement"></p>
+                </div>
+                <p class="content__text">Hãy nhập các số theo thứ tự. Mỗi số cách nhau bằng một khoảng trắng</p>
+            </div>
+            <input class="wrapper__input" type="text" id="numbers" placeholder="Nhập số" />
+            <button id="btn-guess" class="wrapper__button" onclick="check();">Gửi đáp án</button>
+            <button id="btn-reset" class="wrapper__button" onclick="reset();">Chơi lại</button>
+            <p id="result"></p>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__logo" src="img/kmin-logo.png" alt="KMIN logo" />
+    </footer>
+    
+    <script src="./game1.js"></script>
+</body>
+
+</html>
